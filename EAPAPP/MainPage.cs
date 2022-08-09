@@ -29,5 +29,10 @@ namespace EAPAPP
             var formlog = new FormLogin();
             formlog.Show();
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -99,6 +99,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegPage.resx">
       <DependentUpon>RegPage.cs</DependentUpon>
     </EmbeddedResource>

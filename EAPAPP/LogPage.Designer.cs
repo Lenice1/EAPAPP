@@ -37,6 +37,7 @@
             this.ButtonEnter = new System.Windows.Forms.Button();
             this.ButtonBackLog = new System.Windows.Forms.Button();
             this.checkBoxShow = new System.Windows.Forms.CheckBox();
+            this.buttonExitL = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelEAP
@@ -124,11 +125,24 @@
             this.checkBoxShow.UseVisualStyleBackColor = true;
             this.checkBoxShow.CheckedChanged += new System.EventHandler(this.checkBoxShow_CheckedChanged);
             // 
+            // buttonExitL
+            // 
+            this.buttonExitL.Location = new System.Drawing.Point(594, 408);
+            this.buttonExitL.Name = "buttonExitL";
+            this.buttonExitL.Size = new System.Drawing.Size(75, 23);
+            this.buttonExitL.TabIndex = 17;
+            this.buttonExitL.Text = "Exit";
+            this.buttonExitL.UseVisualStyleBackColor = true;
+            this.buttonExitL.Click += new System.EventHandler(this.buttonExitL_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 468);
+            this.Controls.Add(this.buttonExitL);
             this.Controls.Add(this.checkBoxShow);
             this.Controls.Add(this.ButtonBackLog);
             this.Controls.Add(this.ButtonEnter);
@@ -140,6 +154,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +170,6 @@
         private System.Windows.Forms.Button ButtonEnter;
         private System.Windows.Forms.Button ButtonBackLog;
         private System.Windows.Forms.CheckBox checkBoxShow;
+        private System.Windows.Forms.Button buttonExitL;
     }
 }

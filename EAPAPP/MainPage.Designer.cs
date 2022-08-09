@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.labelEAP = new System.Windows.Forms.Label();
             this.ButtonLog = new System.Windows.Forms.Button();
             this.ButtonReg = new System.Windows.Forms.Button();
+            this.buttonExitM = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelEAP
@@ -67,14 +69,27 @@
             this.ButtonReg.UseVisualStyleBackColor = false;
             this.ButtonReg.Click += new System.EventHandler(this.ButtonReg_Click);
             // 
+            // buttonExitM
+            // 
+            this.buttonExitM.Location = new System.Drawing.Point(559, 372);
+            this.buttonExitM.Name = "buttonExitM";
+            this.buttonExitM.Size = new System.Drawing.Size(75, 23);
+            this.buttonExitM.TabIndex = 4;
+            this.buttonExitM.Text = "Exit";
+            this.buttonExitM.UseVisualStyleBackColor = true;
+            this.buttonExitM.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonExitM);
             this.Controls.Add(this.ButtonReg);
             this.Controls.Add(this.ButtonLog);
             this.Controls.Add(this.labelEAP);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.ResumeLayout(false);
@@ -87,5 +102,6 @@
         private System.Windows.Forms.Label labelEAP;
         private System.Windows.Forms.Button ButtonLog;
         private System.Windows.Forms.Button ButtonReg;
+        private System.Windows.Forms.Button buttonExitM;
     }
 }

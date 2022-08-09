@@ -34,5 +34,15 @@ namespace EAPAPP
                 textBoxPassLog.UseSystemPasswordChar = false;
             }
         }
+
+        private void buttonExitL_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

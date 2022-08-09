@@ -17,7 +17,7 @@ namespace EAPAPP
             InitializeComponent();
         }
 
-        private void ButtonSubmit_Click(object sender, EventArgs e, EAPEntities eAPEntities)
+        private void buttonSubmit_Click(object sender, EventArgs e, EAPEntities eAPEntities)
         {
             string name = textBoxName.Text;
             string email = textBoxEmail.Text;
@@ -55,6 +55,11 @@ namespace EAPAPP
         {
             var mainpage = new MainPage();
             mainpage.Show();
+        }
+
+        private void buttonExitR_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

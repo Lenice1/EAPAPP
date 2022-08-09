@@ -16,5 +16,10 @@ namespace EAPAPP
         {
             InitializeComponent();
         }
+
+        private void buttonExitI_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

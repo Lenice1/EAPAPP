@@ -42,8 +42,9 @@
             this.labelRetypepassword = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxRetypePassword = new System.Windows.Forms.TextBox();
-            this.ButtonSubmit = new System.Windows.Forms.Button();
+            this.buttonSubmit = new System.Windows.Forms.Button();
             this.ButtonBackReg = new System.Windows.Forms.Button();
+            this.buttonExitR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelEAP
@@ -173,16 +174,16 @@
             this.textBoxRetypePassword.Size = new System.Drawing.Size(231, 20);
             this.textBoxRetypePassword.TabIndex = 12;
             // 
-            // ButtonSubmit
+            // buttonSubmit
             // 
-            this.ButtonSubmit.BackColor = System.Drawing.Color.Lime;
-            this.ButtonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSubmit.Location = new System.Drawing.Point(616, 403);
-            this.ButtonSubmit.Name = "ButtonSubmit";
-            this.ButtonSubmit.Size = new System.Drawing.Size(75, 28);
-            this.ButtonSubmit.TabIndex = 13;
-            this.ButtonSubmit.Text = "Submit";
-            this.ButtonSubmit.UseVisualStyleBackColor = false;
+            this.buttonSubmit.BackColor = System.Drawing.Color.Lime;
+            this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSubmit.Location = new System.Drawing.Point(616, 403);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(75, 28);
+            this.buttonSubmit.TabIndex = 13;
+            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.UseVisualStyleBackColor = false;
             // 
             // ButtonBackReg
             // 
@@ -196,13 +197,25 @@
             this.ButtonBackReg.UseVisualStyleBackColor = false;
             this.ButtonBackReg.Click += new System.EventHandler(this.ButtonBackReg_Click);
             // 
+            // buttonExitR
+            // 
+            this.buttonExitR.Location = new System.Drawing.Point(713, 403);
+            this.buttonExitR.Name = "buttonExitR";
+            this.buttonExitR.Size = new System.Drawing.Size(75, 23);
+            this.buttonExitR.TabIndex = 15;
+            this.buttonExitR.Text = "Exit";
+            this.buttonExitR.UseVisualStyleBackColor = true;
+            this.buttonExitR.Click += new System.EventHandler(this.buttonExitR_Click);
+            // 
             // FormRegistrationPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonExitR);
             this.Controls.Add(this.ButtonBackReg);
-            this.Controls.Add(this.ButtonSubmit);
+            this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.textBoxRetypePassword);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelRetypepassword);
@@ -239,7 +252,8 @@
         private System.Windows.Forms.Label labelRetypepassword;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxRetypePassword;
-        private System.Windows.Forms.Button ButtonSubmit;
+        private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Button ButtonBackReg;
+        private System.Windows.Forms.Button buttonExitR;
     }
 }

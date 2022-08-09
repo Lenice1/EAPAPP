@@ -22,5 +22,17 @@ namespace EAPAPP
             var mainpage = new MainPage();
             mainpage.Show();
         }
+
+        private void checkBoxShow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxShow.Checked)
+            {
+                textBoxPassLog.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                textBoxPassLog.UseSystemPasswordChar = false;
+            }
+        }
     }
 }

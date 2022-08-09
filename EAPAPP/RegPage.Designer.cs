@@ -160,6 +160,7 @@
             this.textBoxPassword.Location = new System.Drawing.Point(230, 358);
             this.textBoxPassword.Multiline = true;
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(231, 20);
             this.textBoxPassword.TabIndex = 11;
             // 
@@ -168,6 +169,7 @@
             this.textBoxRetypePassword.Location = new System.Drawing.Point(230, 411);
             this.textBoxRetypePassword.Multiline = true;
             this.textBoxRetypePassword.Name = "textBoxRetypePassword";
+            this.textBoxRetypePassword.PasswordChar = '*';
             this.textBoxRetypePassword.Size = new System.Drawing.Size(231, 20);
             this.textBoxRetypePassword.TabIndex = 12;
             // 

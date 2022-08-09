@@ -32,10 +32,11 @@
             this.labelEAP = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxEmailLog = new System.Windows.Forms.TextBox();
+            this.textBoxPassLog = new System.Windows.Forms.TextBox();
             this.ButtonEnter = new System.Windows.Forms.Button();
             this.ButtonBackLog = new System.Windows.Forms.Button();
+            this.checkBoxShow = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // labelEAP
@@ -72,21 +73,22 @@
             this.labelPassword.TabIndex = 2;
             this.labelPassword.Text = "Password:";
             // 
-            // textBox1
+            // textBoxEmailLog
             // 
-            this.textBox1.Location = new System.Drawing.Point(183, 162);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(302, 25);
-            this.textBox1.TabIndex = 3;
+            this.textBoxEmailLog.Location = new System.Drawing.Point(183, 162);
+            this.textBoxEmailLog.Multiline = true;
+            this.textBoxEmailLog.Name = "textBoxEmailLog";
+            this.textBoxEmailLog.Size = new System.Drawing.Size(302, 25);
+            this.textBoxEmailLog.TabIndex = 3;
             // 
-            // textBox2
+            // textBoxPassLog
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 236);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(302, 25);
-            this.textBox2.TabIndex = 4;
+            this.textBoxPassLog.Location = new System.Drawing.Point(183, 236);
+            this.textBoxPassLog.Multiline = true;
+            this.textBoxPassLog.Name = "textBoxPassLog";
+            this.textBoxPassLog.PasswordChar = '*';
+            this.textBoxPassLog.Size = new System.Drawing.Size(302, 25);
+            this.textBoxPassLog.TabIndex = 4;
             // 
             // ButtonEnter
             // 
@@ -111,15 +113,27 @@
             this.ButtonBackLog.UseVisualStyleBackColor = false;
             this.ButtonBackLog.Click += new System.EventHandler(this.ButtonBackLog_Click);
             // 
+            // checkBoxShow
+            // 
+            this.checkBoxShow.AutoSize = true;
+            this.checkBoxShow.Location = new System.Drawing.Point(519, 241);
+            this.checkBoxShow.Name = "checkBoxShow";
+            this.checkBoxShow.Size = new System.Drawing.Size(53, 17);
+            this.checkBoxShow.TabIndex = 16;
+            this.checkBoxShow.Text = "Show";
+            this.checkBoxShow.UseVisualStyleBackColor = true;
+            this.checkBoxShow.CheckedChanged += new System.EventHandler(this.checkBoxShow_CheckedChanged);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 468);
+            this.Controls.Add(this.checkBoxShow);
             this.Controls.Add(this.ButtonBackLog);
             this.Controls.Add(this.ButtonEnter);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPassLog);
+            this.Controls.Add(this.textBoxEmailLog);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelEAP);
@@ -136,9 +150,10 @@
         private System.Windows.Forms.Label labelEAP;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxEmailLog;
+        private System.Windows.Forms.TextBox textBoxPassLog;
         private System.Windows.Forms.Button ButtonEnter;
         private System.Windows.Forms.Button ButtonBackLog;
+        private System.Windows.Forms.CheckBox checkBoxShow;
     }
 }

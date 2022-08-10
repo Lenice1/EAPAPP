@@ -38,5 +38,16 @@ namespace EAPAPP
             var checkout = new FormCheckOut();
             checkout.Show();
         }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void exportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

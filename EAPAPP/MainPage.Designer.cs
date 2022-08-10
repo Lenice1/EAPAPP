@@ -40,7 +40,7 @@
             this.labelEAP.AutoSize = true;
             this.labelEAP.BackColor = System.Drawing.Color.White;
             this.labelEAP.Font = new System.Drawing.Font("Georgia", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEAP.Location = new System.Drawing.Point(92, 9);
+            this.labelEAP.Location = new System.Drawing.Point(108, 9);
             this.labelEAP.Name = "labelEAP";
             this.labelEAP.Size = new System.Drawing.Size(542, 41);
             this.labelEAP.TabIndex = 1;
@@ -50,7 +50,7 @@
             // ButtonLog
             // 
             this.ButtonLog.BackColor = System.Drawing.Color.Cyan;
-            this.ButtonLog.Location = new System.Drawing.Point(225, 271);
+            this.ButtonLog.Location = new System.Drawing.Point(115, 382);
             this.ButtonLog.Name = "ButtonLog";
             this.ButtonLog.Size = new System.Drawing.Size(75, 23);
             this.ButtonLog.TabIndex = 2;
@@ -61,7 +61,7 @@
             // ButtonReg
             // 
             this.ButtonReg.BackColor = System.Drawing.Color.Lime;
-            this.ButtonReg.Location = new System.Drawing.Point(363, 271);
+            this.ButtonReg.Location = new System.Drawing.Point(331, 382);
             this.ButtonReg.Name = "ButtonReg";
             this.ButtonReg.Size = new System.Drawing.Size(75, 23);
             this.ButtonReg.TabIndex = 3;
@@ -71,7 +71,7 @@
             // 
             // buttonExitM
             // 
-            this.buttonExitM.Location = new System.Drawing.Point(559, 372);
+            this.buttonExitM.Location = new System.Drawing.Point(575, 382);
             this.buttonExitM.Name = "buttonExitM";
             this.buttonExitM.Size = new System.Drawing.Size(75, 23);
             this.buttonExitM.TabIndex = 4;
@@ -90,6 +90,7 @@
             this.Controls.Add(this.ButtonLog);
             this.Controls.Add(this.labelEAP);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.ResumeLayout(false);

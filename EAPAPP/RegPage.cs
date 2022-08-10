@@ -61,5 +61,30 @@ namespace EAPAPP
         {
             this.Close();
         }
+
+        private void checkBoxShowP_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxShowP.Checked)
+            {
+                textBoxPassword.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                textBoxPassword.UseSystemPasswordChar = false;
+            }
+
+        }
+
+        private void checkBoxRP_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxRP.Checked)
+            {
+                textBoxRetypePassword.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                textBoxRetypePassword.UseSystemPasswordChar = false;
+            }
+        }
     }
 }

@@ -45,6 +45,8 @@
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.ButtonBackReg = new System.Windows.Forms.Button();
             this.buttonExitR = new System.Windows.Forms.Button();
+            this.checkBoxShowP = new System.Windows.Forms.CheckBox();
+            this.checkBoxRP = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // labelEAP
@@ -207,12 +209,36 @@
             this.buttonExitR.UseVisualStyleBackColor = true;
             this.buttonExitR.Click += new System.EventHandler(this.buttonExitR_Click);
             // 
+            // checkBoxShowP
+            // 
+            this.checkBoxShowP.AutoSize = true;
+            this.checkBoxShowP.Location = new System.Drawing.Point(408, 384);
+            this.checkBoxShowP.Name = "checkBoxShowP";
+            this.checkBoxShowP.Size = new System.Drawing.Size(53, 17);
+            this.checkBoxShowP.TabIndex = 17;
+            this.checkBoxShowP.Text = "Show";
+            this.checkBoxShowP.UseVisualStyleBackColor = true;
+            this.checkBoxShowP.CheckedChanged += new System.EventHandler(this.checkBoxShowP_CheckedChanged);
+            // 
+            // checkBoxRP
+            // 
+            this.checkBoxRP.AutoSize = true;
+            this.checkBoxRP.Location = new System.Drawing.Point(408, 437);
+            this.checkBoxRP.Name = "checkBoxRP";
+            this.checkBoxRP.Size = new System.Drawing.Size(53, 17);
+            this.checkBoxRP.TabIndex = 18;
+            this.checkBoxRP.Text = "Show";
+            this.checkBoxRP.UseVisualStyleBackColor = true;
+            this.checkBoxRP.CheckedChanged += new System.EventHandler(this.checkBoxRP_CheckedChanged);
+            // 
             // FormRegistrationPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 475);
+            this.Controls.Add(this.checkBoxRP);
+            this.Controls.Add(this.checkBoxShowP);
             this.Controls.Add(this.buttonExitR);
             this.Controls.Add(this.ButtonBackReg);
             this.Controls.Add(this.buttonSubmit);
@@ -255,5 +281,7 @@
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Button ButtonBackReg;
         private System.Windows.Forms.Button buttonExitR;
+        private System.Windows.Forms.CheckBox checkBoxShowP;
+        private System.Windows.Forms.CheckBox checkBoxRP;
     }
 }

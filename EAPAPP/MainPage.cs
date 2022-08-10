@@ -21,14 +21,13 @@ namespace EAPAPP
         private void ButtonReg_Click(object sender, EventArgs e)
         {
             var formreg = new FormRegistrationPage();
-            formreg.MdiParent = this;
+            formreg.ShowDialog();
             formreg.Show();
         }
 
         private void ButtonLog_Click(object sender, EventArgs e)
         {
             var formlog = new FormLogin();
-            formlog.MdiParent = this;
             formlog.Show();
         }
 

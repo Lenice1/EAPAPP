@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace EAPAPP
 {
-    public partial class CheckIn : Form
+    public partial class FormCheckOut : Form
     {
-        public CheckIn()
+        public FormCheckOut()
         {
             InitializeComponent();
         }
 
-        private void buttonExitI_Click(object sender, EventArgs e)
+        private void buttonExitO_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-
     }
 }

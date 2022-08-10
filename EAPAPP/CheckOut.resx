@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="buttonExitI.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonExitO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAs8AAAIaCAYAAADfgaArAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EAAACxABrSO9dQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAODnSURBVHhe7f0N
@@ -1084,13 +1084,10 @@
         dyGBqaUMIg2JY9d3hgGlMnjN0xcRPvdx/3/PlbyZilLdTgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAs8AAAIaCAYAAADfgaArAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAODnSURBVHhe7f0N
+        EQAACxEBf2RfkQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAODnSURBVHhe7f0N
         zCVXdecLk4mSySBmwsiTvEL3JpGAzAQpknPFROFF15qMJUI8EGSSkMk4I6wxhgAzMFwDAQfQiyK7EzxA
         OihAbCdYNiHEYOMAdgzG2NjEX8RmricO9PDhgA3d43j4MG7s0O7ues//9Fnd61nPf+/au2pX1a5Ta0m/
         3tX7nFPn46nnnN9Zz9qrHvfsVz3XcRzHcRynaq4/0Jz0yQNHn7waT/nEgeb5q/HsFa8DnzzQ7FlxYS5y

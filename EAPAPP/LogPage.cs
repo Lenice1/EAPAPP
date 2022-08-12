@@ -72,7 +72,7 @@ namespace EAPAPP
                 var hashed_password = sBuilder.ToString();
                
 
-                var user = _db.EAPLogins.FirstOrDefault(q => q.Email == emailusername && q.Password == emailpassword);
+                var user = _db.EAPLogins.FirstOrDefault(q => q.Email == emailusername && q.Password == hashed_password);
 
                 if(user == null)
                 {

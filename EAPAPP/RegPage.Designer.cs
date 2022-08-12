@@ -42,7 +42,7 @@
             this.labelRetypepassword = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxRetypePassword = new System.Windows.Forms.TextBox();
-            this.buttonSubmit = new System.Windows.Forms.Button();
+            this.ButtonSubmit = new System.Windows.Forms.Button();
             this.ButtonBackReg = new System.Windows.Forms.Button();
             this.buttonExitR = new System.Windows.Forms.Button();
             this.checkBoxShowP = new System.Windows.Forms.CheckBox();
@@ -176,16 +176,17 @@
             this.textBoxRetypePassword.Size = new System.Drawing.Size(231, 20);
             this.textBoxRetypePassword.TabIndex = 12;
             // 
-            // buttonSubmit
+            // ButtonSubmit
             // 
-            this.buttonSubmit.BackColor = System.Drawing.Color.Lime;
-            this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(616, 403);
-            this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(75, 28);
-            this.buttonSubmit.TabIndex = 13;
-            this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = false;
+            this.ButtonSubmit.BackColor = System.Drawing.Color.Lime;
+            this.ButtonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonSubmit.Location = new System.Drawing.Point(616, 403);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.Size = new System.Drawing.Size(75, 28);
+            this.ButtonSubmit.TabIndex = 13;
+            this.ButtonSubmit.Text = "Submit";
+            this.ButtonSubmit.UseVisualStyleBackColor = false;
+            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
             // 
             // ButtonBackReg
             // 
@@ -241,7 +242,7 @@
             this.Controls.Add(this.checkBoxShowP);
             this.Controls.Add(this.buttonExitR);
             this.Controls.Add(this.ButtonBackReg);
-            this.Controls.Add(this.buttonSubmit);
+            this.Controls.Add(this.ButtonSubmit);
             this.Controls.Add(this.textBoxRetypePassword);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelRetypepassword);
@@ -278,7 +279,7 @@
         private System.Windows.Forms.Label labelRetypepassword;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxRetypePassword;
-        private System.Windows.Forms.Button buttonSubmit;
+        private System.Windows.Forms.Button ButtonSubmit;
         private System.Windows.Forms.Button ButtonBackReg;
         private System.Windows.Forms.Button buttonExitR;
         private System.Windows.Forms.CheckBox checkBoxShowP;

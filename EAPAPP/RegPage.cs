@@ -17,38 +17,33 @@ namespace EAPAPP
             InitializeComponent();
         }
 
-        private void buttonSubmit_Click(object sender, EventArgs e, EAPEntities eAPEntities)
+        private async void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            string name = textBoxName.Text;
-            string email = textBoxEmail.Text;
-            string department = textBoxDepartment.Text;
-            var dob = dateTimePickerDOB.Value;
-            string psw = textBoxPassword.Text;
-            string rpsw = textBoxRetypePassword.Text;
-            var isValid = true;
 
-            
 
-            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(department) || string.IsNullOrWhiteSpace(psw) || string.IsNullOrWhiteSpace(rpsw))
+            if (string.IsNullOrEmpty(textBoxEmail.Text))
             {
-                isValid = false;
-                MessageBox.Show ("Error: Please Enter Data In All Fields!\n\r");
+                MessageBox.Show("Please Enter Your Email!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBoxEmail.Focus();
+                return;
             }
-            if (isValid == true)
-            {
-                    var eapbd = new EAPBioData();
-                    eapbd.Name = name;
-                    eapbd.Email = email;
-                    eapbd.Department = department;
-                    eapbd.DOB = dob;
-                    eapbd.Password = psw;
-                    eapbd.RetypePassword = rpsw;
 
-                    eAPEntities.EAPBioDatas.Add(eapbd);
-                    eAPEntities.SaveChanges();
-         
-                MessageBox.Show($"Account Sucessfully Created for {name}\n\r");
-              }
+            if (textBoxPassword.Text != textBoxRetypePassword.Text)
+            {
+                MessageBox.Show("Password & Retyped Password Do Not Match!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return;
+            }
+            IUserRepository repository = new UserRepository();
+            bool result = await repository.Insert(new User() { Name = textBoxName.Text, Email = textBoxEmail.Text, Department = textBoxDepartment.Text, Password = textBoxPassword.Text });
+
+
+            if (result)
+                MessageBox.Show("Registration Successful!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            else
+
+                MessageBox.Show("Error!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ButtonBackReg_Click(object sender, EventArgs e)
@@ -86,5 +81,8 @@ namespace EAPAPP
                 textBoxRetypePassword.UseSystemPasswordChar = false;
             }
         }
+
+
     }
 }
+

@@ -12,7 +12,7 @@ namespace EAPAPP
     using System;
     using System.Collections.Generic;
     
-    public partial class EAPBioData
+    public partial class EAPBioData 
     {
         public int Id { get; set; }
         public string Name { get; set; }

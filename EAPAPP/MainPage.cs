@@ -21,7 +21,7 @@ namespace EAPAPP
         private void ButtonReg_Click(object sender, EventArgs e)
         {
             var formreg = new FormRegistrationPage();
-            formreg.ShowDialog();
+     
             formreg.Show();
         }
 

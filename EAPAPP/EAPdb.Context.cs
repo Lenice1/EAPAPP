@@ -26,6 +26,6 @@ namespace EAPAPP
         }
     
         public virtual DbSet<EAPBioData> EAPBioDatas { get; set; }
-        public static object EAPBioData { get; internal set; }
+        public virtual DbSet<EAPLogin> EAPLogins { get; set; }
     }
 }

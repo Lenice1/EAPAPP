@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="efc39b6088984adab0b7c7be3bb8c455" Name="Diagram1">
         <EntityTypeShape EntityType="EAPModel.EAPBioData" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EAPModel.EAPLogin" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

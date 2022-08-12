@@ -101,6 +101,7 @@
             this.ButtonEnter.TabIndex = 14;
             this.ButtonEnter.Text = "Enter";
             this.ButtonEnter.UseVisualStyleBackColor = false;
+            this.ButtonEnter.Click += new System.EventHandler(this.ButtonEnter_Click);
             // 
             // ButtonBackLog
             // 
